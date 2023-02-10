@@ -1,14 +1,15 @@
-h2{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 31px;
-}
 .h2{
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
     line-height: 31px;  
+}
+.h3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
 }
 a{
     text-decoration: none;
@@ -46,8 +47,9 @@ header{
 header .cta-commencer{
     font-style: normal;
     font-weight: 400;
-    font-size: 26px;
-    line-height: 31px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
 }
 header .cta-commencer:hover{
     text-decoration: none;
@@ -69,7 +71,76 @@ header .cta-commencer:hover{
 
 .navOn{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     width: 90%;
     margin: 20px 60px;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 60px;
+    background-color: #E0E7EC;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.logo-footer{
+    width: 130px;
+    height: 60px;
+}
+.nav-links{
+    display: flex;
+}
+.nav-footer{
+    display: flex;
+    flex-direction: column;
+}
+.nav-footer h2{
+    margin-bottom: 27px;
+}
+.nav-footer a{
+    margin-bottom: 15px;
+}
+.nav-mid{
+    margin: 0 70px;
+}
+.footer-right form{
+    margin-bottom: 48px;
+    display: flex;
+}
+.footer-right > form > input{
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    width: 272px;
+    padding: 0 16px;
+    height: 42px;
+}
+.footer-right > form > .btn-send{
+    width: 42px;
+    height: 42px;
+    position: relative;
+    right: 42px;
+}
+.footer-right > form > .btn-send img{
+    width: 24px;
+    height: 24px;
+    padding: 9px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    background: linear-gradient(90deg, rgba(248,137,40,1) 0%, rgba(249,194,54,1) 35%, rgba(255,218,106,1) 100%);
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.arrow-up{
+    padding: 8px 14px;
+    border-radius: 100px;
+    background: linear-gradient(90deg, rgba(248,137,40,1) 0%, rgba(249,194,54,1) 35%, rgba(255,218,106,1) 100%);
 }

@@ -6,13 +6,10 @@ console.log(nav);
 
 burger.addEventListener('click', function(){
     console.log('entered event');
-    let countNav = 0
-    if (countNav%2){
+    if (nav.classList.contains('navOff')){
         nav.classList.replace('navOff', 'navOn'); 
-        countNav ++;
     } else {
         nav.classList.replace('navOn', 'navOff');
-        countNav ++;
     }
 });
 
