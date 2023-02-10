@@ -3,6 +3,7 @@
 body{
     font-family: 'Raleway', sans-serif;
     background-color: #F0EEF4;
+    box-sizing: content-box;
 }
 
 /* Librairie Typo et Boutons */
@@ -419,7 +420,7 @@ footer{
     height: 42px;
 }
 .footer-right > form > .btn-send{
-    width: 43px;
+    width: 42px;
     height: 42px;
     position: relative;
     right: 42px;
