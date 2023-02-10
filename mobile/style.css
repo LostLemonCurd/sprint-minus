@@ -35,6 +35,7 @@ header{
 }
 .burger{
     height: 100%;
+    cursor: pointer;
 }
 .burger span{
     display: block;
@@ -84,30 +85,38 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px 60px;
+    padding: 40px 30px;
     background-color: #E0E7EC;
 }
 .nav-links{
     display: flex;
 }
-.nav-footer{
+.nav-footer-on{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 12px;
 }
-footer p{
-    margin-bottom: 20px;
+.nav-footer-on a{
+    margin-bottom: 10px;
+}
+.nav-footer-off{
+    display: none;
+}
+footer .footer-link{
+    margin-bottom: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
-footer p::after{
+footer .footer-link::after{
     content: "";
     display: block;
     height: 11px;
     width: 20px;
+    margin-left: 5px;
     background-image: url(img/vector-down.svg);
 }
 .nav-footer a{
@@ -118,6 +127,9 @@ footer p::after{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.nl p{
+    margin-bottom: 12px;
 }
 form{
     margin-bottom: 48px;
@@ -147,11 +159,19 @@ form > .btn-send img{
     background: linear-gradient(90deg, rgba(248,137,40,1) 0%, rgba(249,194,54,1) 35%, rgba(255,218,106,1) 100%);
 }
 .arrow-up{
+    margin-bottom: 20px;
     padding: 8px 14px;
     border-radius: 100px;
     background: linear-gradient(90deg, rgba(248,137,40,1) 0%, rgba(249,194,54,1) 35%, rgba(255,218,106,1) 100%);
 }
+footer > img{
+    margin: 20px 0;
+}
 .nav-rs{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
+}
+.nav-rs .rs-mid{
+    margin: 0 12px;
 }
