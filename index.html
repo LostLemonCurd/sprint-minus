@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header id="header">
+    <header id="desktop-header">
         <div class="header-left">
             <img src="img/logo-header.svg" alt="Logo Minus Header" class="logo-header">
             <nav class="nav-left">
@@ -23,10 +23,27 @@
         <div class="header-right">
             <nav class="nav-right">
                 <a href="#" class="h2 marg">Espace Mon Minus</a>
-                <button class="cta-commencer">Commencer</button>
+                <button class="cta-commencer h2">Commencer</button>
             </nav>    
         </div>
     </header>
+    <header id="responsive-header">
+        <div class="header">
+            <div class="burger" id="burger">
+                <span></span>
+                <span class="mid-span"></span>
+                <span></span>
+            </div>
+            <img src="img/logo-footer.svg" alt="Logo Minus Header" class="logo-header">
+            <button class="cta-commencer">Commencer</button>
+        </div>
+        <nav id="nav" class="navOff">
+            <a href="#" class="h3">Au Menu</a>
+            <a href="#" class="h3">Le Concept</a>
+            <a href="#" class="h3 marg">Espace Mon Minus</a>
+        </nav>  
+    </header>
+
 
     <!-- Début du MAIN -->
     <main>
@@ -218,7 +235,7 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer id="desktop-footer">
         <div class="footer-top">
             <img src="img/logo-footer.svg" alt="Logo Minus Footer" class="logo-footer">
             <div class="nav-links">
@@ -260,5 +277,42 @@
             <a href="#"><img src="img/arrow-up.svg" alt="arrow-up" class="arrow-up cta"></a>
         </div>
     </footer>
+    <footer id="responsive-footer">
+        <div class="nl">
+            <p class="h2">S'abonner à la newsletter</p>
+            <form method="post">
+                <input type="email" placeholder="E-mail" class="nl-form body2">
+                <a class="btn-send"><img src="img/send.svg" alt="Bouton Envoyer"></a>
+            </form>
+        </div>
+        <p class="h2 footer-link" id="nav-minus">Minus</p>
+        <nav class="nav-footer-off" id="links-minus">
+            <a href="#" class="txt-footer">Le Concept</a>
+            <a href="#" class="txt-footer">Espace Minus</a>
+            <a href="#" class="txt-footer">Gestion des Cookies</a>
+        </nav>
+        <p class="h2 footer-link" id="nav-about">À Propos</p>
+        <nav class="nav-footer-off" id="links-about">
+            <a href="#" class="txt-footer">CGV</a>
+            <a href="#" class="txt-footer">Mentions Légales</a>
+            <a href="#" class="txt-footer">Politique de Confidentialité</a>
+            <a href="#" class="txt-footer">Livraison</a>
+        </nav>
+        <p class="h2 footer-link" id="nav-aide">Aide</p>
+        <nav class="nav-footer-off" id="links-aide">
+            <a href="#" class="txt-footer">Blog</a>
+            <a href="#" class="txt-footer">FAQ</a>
+            <a href="#" class="txt-footer">Contact</a>
+        </nav>
+        <img src="img/logo-footer.svg" alt="Logo Minus Footer" class="logo-footer">
+        <nav class="nav-rs">
+            <a href="#" class="txt-footer"><img src="img/insta.png" alt="Instagram"></a>
+            <a href="#" class="txt-footer rs-mid"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="#" class="txt-footer"><img src="img/linkedin.png" alt="Linkedin"></a>
+        </nav>
+        <a href="#"><img src="img/arrow-up.svg" alt="arrow-up" class="arrow-up"></a>
+        <p class="txt-footer">©2023 Crédits & copyrights</p>
+    </footer>
+
 </body>
 </html>
