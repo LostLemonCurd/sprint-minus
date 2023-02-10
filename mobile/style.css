@@ -46,6 +46,10 @@ header{
 .mid-span{
     margin: 6px 0;
 }
+.logo-header{
+    position: relative;
+    left: 70px;
+}
 header .cta-commencer{
     font-style: normal;
     font-weight: 400;
