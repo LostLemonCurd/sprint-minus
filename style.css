@@ -476,7 +476,7 @@ footer{
     .catchphrase{
         position: static;
         width: 90%;
-        margin: 0 30px;
+        margin: 20px 30px 0;
     }
     .banniere-info{
         right: 0;
@@ -516,6 +516,7 @@ footer{
     }
     .avis-section{
         flex-direction: column;
+        height: 780px;
     }
     .avis-section .avis-card{
         margin-bottom: 20px;
