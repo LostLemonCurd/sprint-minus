@@ -564,21 +564,38 @@ footer{
     .nav-footer-off{
         display: none;
     }
-    footer .footer-link{
+    footer .link-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin-bottom: 12px;
+    }
+    footer .footer-link{
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
     }
-    footer .footer-link::after{
+    .img-chevron{
+        cursor: pointer;
+        padding-left: 10px;
+    }
+    /* footer .footer-link::after{
         content: "";
         display: block;
         height: 11px;
         width: 20px;
         margin-left: 5px;
-        background-image: url(img/vector-down.svg);
+        background-image: url(img/chevron-down.svg);
     }
+    .footer-link:active::after{
+        content: "";
+        display: block;
+        height: 9px;
+        width: 14px;
+        margin-left: 5px;
+        background-image: url(img/chevron-up.svg); 
+    } */
     .nav-footer a{
         margin-bottom: 15px;
     }
