@@ -473,12 +473,6 @@ footer{
 }
 
 @media screen and (max-width: 1024px) {
-    /* .header-left{
-        flex-direction: column;
-    }
-    .nav-right{
-        flex-direction: column-reverse;
-    } */
     /* Responsive Header/Footer */
     #desktop-header{
         display: none;
@@ -521,9 +515,6 @@ footer{
     }
     header .cta-commencer:hover{
         text-decoration: none;
-    }
-    .banniere-top .cta-commencer{
-        height: 64px;
     }
     .cta-commencer{
         padding: 10px 39px;
@@ -600,12 +591,12 @@ footer{
     .nl p{
         margin-bottom: 12px;
     }
-    form{
+    #responsive-footer > .nl > form{
         margin-bottom: 48px;
         display: flex;
         position: relative;
     }
-    form > input{
+    #responsive-footer > .nl > form > input{
         background-color: #fff;
         border: none;
         border-radius: 8px;
@@ -613,13 +604,14 @@ footer{
         padding: 0 16px;
         height: 42px;
     }
-    form > .btn-send{
+    #responsive-footer > .nl > form > .btn-send{
         width: 42px;
         height: 42px;
         position: absolute;
         right: 0px;
+        cursor: pointer;
     }
-    form > .btn-send img{
+    #responsive-footer > .nl > form > .btn-send img{
         width: 24px;
         height: 24px;
         padding: 9px;
@@ -650,7 +642,7 @@ footer{
         margin: 20px 30px 0;
     }
     .banniere-info{
-        right: 0;
+        left: 23%;
         margin: 0 30px;
     }
     .cards-step{
@@ -688,6 +680,8 @@ footer{
     .avis-section{
         flex-direction: column;
         height: 780px;
+        margin: auto;
+        width: 80%;
     }
     .avis-section .avis-card{
         margin-bottom: 20px;
@@ -695,17 +689,4 @@ footer{
     .banniere-bottom-infos{
         right: 38%;
     }
-    /* .footer-top{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .nav-links{
-        margin-bottom: 20px;
-    }
-    .footer-bottom{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    } */
 }
