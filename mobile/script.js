@@ -1,3 +1,7 @@
+let myMediaQuery = window.matchMedia('(max-width: 1000px');
+console.log(myMediaQuery);
+
+
 let burger = document.querySelector('#burger');
 console.log(burger);
 let nav = document.querySelector('#nav');
