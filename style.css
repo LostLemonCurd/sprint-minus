@@ -619,6 +619,9 @@ footer{
         border-radius: 0 8px 8px 0;
         background: linear-gradient(90deg, rgba(248,137,40,1) 0%, rgba(249,194,54,1) 35%, rgba(255,218,106,1) 100%);
     }
+    #responsive-footer > .nl > form > .btn-send:hover img{
+        background: #FEEAB3;
+    }
     .arrow-up{
         margin-bottom: 20px;
         padding: 8px 14px;
