@@ -181,6 +181,9 @@ header .cta-commencer:hover{
     align-items: center;
     margin: 0 30px;
 }
+.section-steps h2{
+    font-weight: bold;
+}
 .cards-step{
     display: flex;
     justify-content: space-between;
@@ -224,6 +227,9 @@ header .cta-commencer:hover{
     justify-content: center;
     align-items: center;
     margin: 80px 30px 0;
+}
+.menu h2{
+    font-weight: bold;
 }
 .menu-cards{
     margin:40px 0;
@@ -302,6 +308,7 @@ header .cta-commencer:hover{
 .avis h2{
     text-align: center;
     margin-bottom: 40px;
+    font-weight: bold;
 }
 .avis-section{
     display: flex;
