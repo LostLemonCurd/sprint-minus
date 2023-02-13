@@ -14,7 +14,7 @@
     <!-- HEADER -->
     <header id="desktop-header">
         <div class="header-left">
-            <img src="img/logo-header.svg" alt="Logo Minus Header" class="logo-header">
+            <a href="#"><img src="img/logo-header.svg" alt="Logo Minus Header" class="logo-header"></a>
             <nav class="nav-left">
                 <a href="#" class="h2">Au Menu</a>
                 <a href="#" class="h2">Le Concept</a>
@@ -30,12 +30,12 @@
     </header>
     <header id="responsive-header">
         <div class="header">
-            <div class="burger" id="burger">
+            <button class="burger" id="burger">
                 <span></span>
                 <span class="mid-span"></span>
                 <span></span>
-            </div>
-            <img src="img/logo-footer.svg" alt="Logo Minus Header" class="logo-header">
+            </button>
+            <a href="#"><img src="img/logo-footer.svg" alt="Logo Minus Header" class="logo-header"></a>
             <button class="cta-commencer">Commencer</button>
         </div>
         <nav id="nav" class="navOff">
@@ -58,9 +58,9 @@
                 <p class="body1">Pour vérifier si vous êtes éligible, entrez votre code postal</p>
                 <div class="cta-banniere">
                     <form method="get">
-                        <input class="postal h4" type="text" placeholder="Code Postal">
+                        <input class="postal body2" type="text" placeholder="Code Postal">
                     </form>
-                    <button class="cta-commencer h4 ">Commencer</button>
+                    <button class="cta-commencer h4">Commencer</button>
                 </div>
             </div>
             <div class="catchphrase">
@@ -72,45 +72,45 @@
         <!-- Comment ça marche? -->
         <div class="section-steps">
             <h2 class="h2">Comment ça marche?</h2>
-            <div class="cards-step">
-                <div class="card">
-                    <div class="etape-img">
-                        <img class="step" src="img/etape-1.png" alt="Etape 1">
+            <div class="grille-4">
+                <div class="col">
+                    <div class="card">
+                        <img class="img" src="img/etape-1.png" alt="Etape 1">
                         <img class="one" src="img/one.png" alt="Nombre Un">
-                    </div>
-                    <div class="etape-infos">
-                        <h3>Choisissez votre box et ses recettes</h3>
-                        <p class="body2">Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet</p>
+                        <div class="card-infos">
+                            <h3>Choisissez votre box et ses recettes</h3>
+                            <p class="body2">Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="etape-img">
-                        <img class="step" src="img/etape-2.png" alt="Etape 2">
+                <div class="col">
+                    <div class="card">
+                        <img class="img" src="img/etape-2.png" alt="Etape 2">
                         <img class="one" src="img/two.png" alt="Nombre Deux">
+                        <div class="card-infos">
+                            <h3>Renseignez vos informations ou connectez vous</h3>
+                            <p class="body2">Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet</p>
+                        </div>
                     </div>
-                    <div class="etape-infos">
-                        <h3>Choisissez votre box et ses recettes</h3>
-                        <p class="body2">Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="etape-img">
-                        <img class="step" src="img/etape-3.png" alt="Etape 3">
+                </div>        
+                <div class="col">
+                    <div class="card">
+                        <img class="img" src="img/etape-3.png" alt="Etape 3">
                         <img class="one" src="img/three.png" alt="Nombre Trois">
-                    </div>
-                    <div class="etape-infos">
-                        <h3>Choisissez votre box et ses recettes</h3>
-                        <p class="body2">Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet</p>
+                        <div class="card-infos">
+                            <h3>Choisissez votre abonnement</h3>
+                            <p class="body2">Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="etape-img">
-                        <img class="step" src="img/etape-4.png" alt="Etape 4">
+                <div class="col">
+                    <div class="card">
+                        <img class="img" src="img/etape-4.png" alt="Etape 4">
                         <img class="one" src="img/four.png" alt="Nombre Quatre">
-                    </div>
-                    <div class="etape-infos">
-                        <h3>Choisissez votre box et ses recettes</h3>
-                        <p class="body2">Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet</p>
+                        <div class="card-infos">
+                            <h3>Payer votre box et régalez vous !</h3>
+                            <p class="body2">Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -118,42 +118,41 @@
         </div>
         <!-- Menu de la semaine -->
         <div class="menu">
-            <h2 class="h2">Les plats de la semaine</h2>
-            <div class="menu-cards">
-                <div class="card">
-                    <div class="card-img">
-                        <img src="img/toast.png" alt="Toast">
-                    </div>
-                    <div class="opacite"></div>
-                    <div class="card-infos">
-                        <h3>Toast Avocat Oeufs Mollets</h3>
+            <div class="grille-4">
+                <div class="col">
+                    <div class="card">
+                        <img class="img" src="img/toast.png" alt="Toast">
+                        <div class="opacite"></div>
+                        <div class="card-infos">
+                            <h3>Toast Avocat Oeufs Mollets</h3>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="img" src="img/balls.png" alt="Meatballs">
+                        <div class="opacite"></div>
+                        <div class="card-infos">
+                            <h3>Salade de Boulette de Boeuf</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="img/balls.png" alt="Meatballs">
-                    </div>
-                    <div class="opacite"></div>
-                    <div class="card-infos">
-                        <h3>Salade de Boulette de Boeuf</h3>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="img/wok.png" alt="Wok">
-                    </div>
-                    <div class="opacite"></div>
-                    <div class="card-infos">
-                        <h3>Nouilles sautées aux crevettes</h3>
+                <div class="col">
+                    <div class="card">
+                        <img class="img" src="img/wok.png" alt="Wok">
+                        <div class="opacite"></div>
+                        <div class="card-infos">
+                            <h3>Nouilles sautées aux crevettes</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="img/tacos.png" alt="Tacos">
-                    </div>
-                    <div class="opacite"></div>
-                    <div class="card-infos">
-                        <h3>Tacos végétarien</h3>
+                <div class="col">
+                    <div class="card">
+                        <img class="img" src="img/tacos.png" alt="Tacos">
+                        <div class="opacite"></div>
+                        <div class="card-infos">
+                            <h3>Tacos végétarien</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -238,7 +237,7 @@
     <!-- Footer -->
     <footer id="desktop-footer">
         <div class="footer-top">
-            <img src="img/logo-footer.svg" alt="Logo Minus Footer" class="logo-footer">
+            <a href="#"><img src="img/logo-footer.svg" alt="Logo Minus Footer" class="logo-footer"></a>
             <div class="nav-links">
                 <nav class="nav-footer">
                     <h2>Minus</h2>
@@ -286,35 +285,35 @@
                 <a class="btn-send"><img src="img/send.svg" alt="Bouton Envoyer"></a>
             </form>
         </div>
-        <div class="link-title" id="nav-minus">
+        <button class="link-title" id="nav-minus">
             <p class="h2 footer-link">Minus</p>
             <img id="chevronMinus" class="img-chevron" src="img/chevron-right.svg" alt="Chevron up">    
-        </div>
+        </button>
         <nav class="nav-footer-off" id="links-minus">
             <a href="#" class="txt-footer">Le Concept</a>
             <a href="#" class="txt-footer">Espace Minus</a>
             <a href="#" class="txt-footer">Gestion des Cookies</a>
         </nav>
-        <div class="link-title" id="nav-about">
+        <button class="link-title" id="nav-about">
             <p class="h2 footer-link">À Propos</p>
             <img id="chevronAbout" class="img-chevron" src="img/chevron-right.svg" alt="Chevron up">    
-        </div>
+        </button>
         <nav class="nav-footer-off" id="links-about">
             <a href="#" class="txt-footer">CGV</a>
             <a href="#" class="txt-footer">Mentions Légales</a>
             <a href="#" class="txt-footer">Politique de Confidentialité</a>
             <a href="#" class="txt-footer">Livraison</a>
         </nav>
-        <div class="link-title" id="nav-aide">
+        <button class="link-title" id="nav-aide">
             <p class="h2 footer-link">Aide</p>
             <img id="chevronAide" class="img-chevron" src="img/chevron-right.svg" alt="Chevron up">    
-        </div>
+        </button>
         <nav class="nav-footer-off" id="links-aide">
             <a href="#" class="txt-footer">Blog</a>
             <a href="#" class="txt-footer">FAQ</a>
             <a href="#" class="txt-footer">Contact</a>
         </nav>
-        <img src="img/logo-footer.svg" alt="Logo Minus Footer" class="logo-footer">
+        <a href="#"><img src="img/logo-footer.svg" alt="Logo Minus Footer" class="logo-footer"></a>
         <nav class="nav-rs">
             <a href="#" class="txt-footer"><img src="img/insta.png" alt="Instagram"></a>
             <a href="#" class="txt-footer rs-mid"><img src="img/facebook.png" alt="Facebook"></a>
