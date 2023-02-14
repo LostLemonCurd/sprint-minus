@@ -207,6 +207,8 @@ header .cta-commencer:hover{
     position: relative;
     width: 100%;
     background-color: #2D292A;
+    border-radius: 8px;
+    overflow: hidden;
 }
 .img{
     display: block;
@@ -293,6 +295,8 @@ header .cta-commencer:hover{
     position: relative;
     width: 710px;
     height: 514px;
+    border-radius: 8px;
+    overflow: hidden;
 }
 .lifestyle-img img{
     height: 100%;
