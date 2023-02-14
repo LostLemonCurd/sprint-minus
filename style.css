@@ -481,6 +481,8 @@ footer{
 .arrow-up:hover{
     background: #FEEAB3;
 }
+
+
 @media screen and (max-width: 1300px) {
     .grille-4 .col{
         width: calc(100% / 2);
@@ -491,7 +493,11 @@ footer{
     }
 }
 
+
 @media screen and (max-width: 1024px) {
+
+    /* HEADER */
+
     nav{
         order: 3;
         justify-content: center;
@@ -520,31 +526,15 @@ footer{
     .mid-span{
         margin: 6px 0;
     }
-    #responsive-header .cta-commencer{
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        text-align: center;
-    }
     header .cta-commencer:hover{
         text-decoration: none;
     }
     .cta-commencer{
         padding: 10px 8px;
-        border: none;
-        border-radius: 8px;
-        background: linear-gradient(90deg, rgba(248,137,40,1) 0%, rgba(249,194,54,1) 35%, rgba(255,218,106,1) 100%);
-        cursor: pointer;
     }
-    .cta-commencer:hover{
-        text-decoration: none;
-    }
-    
     .navOff{
         display: none;
     }
-    
     .navOn{
         display: flex;
         justify-content: center;
@@ -658,6 +648,8 @@ footer{
         right: 38%;
     }
 }
+
+
 @media screen and (max-width: 730px) {
     .navOn{
         flex-direction: column;
