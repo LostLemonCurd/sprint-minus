@@ -8,9 +8,6 @@ body{
     background-color: #F0EEF4;
     box-sizing: border-box;
 }
-#responsive-header{
-    display: none;
-}
 #responsive-footer{
     display: none;
 }
@@ -106,24 +103,21 @@ header{
     padding: 16px 30px;
     background-color: #E0E7EC;
 }
-.header-left{
+.burger{
+    display: none;
+}
+header nav{
     display: flex;
-    align-items: center;
+    padding: 10px;
+    width: 100%;
+    margin-left: 20px;
 }
-.marg{
-    margin-right: 30px;
+header nav .marg{
+    margin-left: auto;
 }
-.nav-left{
-    margin-left: 60px;
-}
-.nav-left a{
+header nav a:not(:last-child){
     margin-right: 60px;
 }
-.nav-right{
-    display: flex;
-    align-items: center;
-}
-
 header .h2:hover{
     text-decoration: underline;
 }
@@ -402,14 +396,36 @@ footer{
     display: flex;
     flex-direction: column;
 }
-.nav-footer h2{
-    margin-bottom: 27px;
+.nav-footer button{
+    margin: 16px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.img-chevron{
+    display: none;
+}
+.nav-footer-on{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
 }
 .nav-footer a{
     margin-bottom: 15px;
 }
 .nav-mid{
     margin: 0 70px;
+}
+.desktop-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.desktop-links .txt-footer{
+    font-size: 14px;
 }
 .footer-right{
     text-align: center;
@@ -445,7 +461,6 @@ footer{
 .footer-right > form > .btn-send:hover img{
     background: #FEEAB3;
 }
-
 .footer-bottom{
     display: flex;
     justify-content: space-between;
@@ -477,27 +492,19 @@ footer{
 }
 
 @media screen and (max-width: 1024px) {
-    /* Responsive Header/Footer */
-    #desktop-header{
-        display: none;
-    }
-    #desktop-footer{
-        display: none;
-    }
-    #responsive-header{
-        display: flex;
-        flex-direction: column;
+    nav{
+        order: 3;
+        justify-content: center;
         align-items: center;
-        padding: 16px 30px;
-        background-color: #E0E7EC;
     }
-    .header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
+    nav .marg{
+        margin-left: 0;
+    }
+    header{
+        flex-wrap: wrap;
     }
     .burger{
+        display: block;
         height: 100%;
         cursor: pointer;
         margin: 0;
@@ -524,7 +531,7 @@ footer{
         text-decoration: none;
     }
     .cta-commencer{
-        padding: 10px 39px;
+        padding: 10px 8px;
         border: none;
         border-radius: 8px;
         background: linear-gradient(90deg, rgba(248,137,40,1) 0%, rgba(249,194,54,1) 35%, rgba(255,218,106,1) 100%);
@@ -540,23 +547,33 @@ footer{
     
     .navOn{
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 90%;
-        margin: 20px 60px;
+        justify-content: center;
+        align-items: center;
     }
     
     /* FOOTER */
-    #responsive-footer{
-        display: flex;
+
+    .footer-top{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 40px 30px;
-        background-color: #E0E7EC;
     }
     .nav-links{
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .link-title{
         display: flex;
+        align-items: center;
+
+    }
+    .img-chevron{
+        display: block;
+        cursor: pointer;
+        padding-left: 10px;
+    }
+    .nav-footer .desktop-links{
+        font-size: 12px;
     }
     .nav-footer-on{
         display: flex;
@@ -571,82 +588,29 @@ footer{
     .nav-footer-off{
         display: none;
     }
-    footer .link-title{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 12px;
-        border: none;
-        background: none;
+    .nav-mid{
+        margin: 0;
     }
-    footer .footer-link{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-    }
-    .img-chevron{
-        cursor: pointer;
-        padding-left: 10px;
-    }
-
-    .nav-footer a{
-        margin-bottom: 15px;
-    }
-    .nl{
+    .footer-right{
         display: flex;
         flex-direction: column;
+        order: 1;
+    }
+    .footer-right .h2{
+        font-weight: bold;
+    }
+    .footer-bottom{
+        flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
     }
-    .nl p{
-        margin-bottom: 12px;
+    .footer-bottom p{
+        margin-bottom: 0;
+        margin-top: 20px;
     }
-    #responsive-footer > .nl > form{
-        margin-bottom: 48px;
-        display: flex;
-        position: relative;
-    }
-    #responsive-footer > .nl > form > input{
-        background-color: #fff;
-        border: none;
-        margin: 0;
-        border-radius: 8px;
-        width: 272px;
-        padding: 0 16px;
-        height: 42px;
-    }
-    #responsive-footer > .nl > form > .btn-send{
-        position: absolute;
-        right: 0px;
-        cursor: pointer;
-    }
-    #responsive-footer > .nl > form > .btn-send img{
-        padding: 9px;
-        border: none;
-        border-radius: 0 8px 8px 0;
-        background: linear-gradient(90deg, rgba(248,137,40,1) 0%, rgba(249,194,54,1) 35%, rgba(255,218,106,1) 100%);
-    }
-    #responsive-footer > .nl > form > .btn-send:hover img{
-        background: #FEEAB3;
-    }
-    .arrow-up{
-        margin-bottom: 20px;
-        padding: 8px 14px;
-        border-radius: 100px;
-        background: linear-gradient(90deg, rgba(248,137,40,1) 0%, rgba(249,194,54,1) 35%, rgba(255,218,106,1) 100%);
-    }
-    footer > img{
-        margin: 20px 0;
-    }
-    .nav-rs{
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px;
-    }
-    .nav-rs .rs-mid{
-        margin: 0 12px;
-    }
+
+    /* BANNIERE-TOP */
+
     .catchphrase{
         position: static;
         width: 90%;
@@ -656,6 +620,9 @@ footer{
         left: 23%;
         margin: 0 30px;
     }
+
+    /* LIFESTYLE */
+
     .lifestyle{
         flex-direction: column;
         justify-content: center;
@@ -672,6 +639,9 @@ footer{
         width: 80%;
         margin-right: 0px;
     }
+
+/* AVIS */
+
     .avis-section{
         flex-direction: column;
         height: 780px;
@@ -681,6 +651,9 @@ footer{
     .avis-section .avis-card{
         margin-bottom: 20px;
     }
+
+/* BANNIERE BOTTOM */
+
     .banniere-bottom-infos{
         right: 38%;
     }
@@ -691,6 +664,6 @@ footer{
         padding: 16px 16px;
     }
     .opacite{
-        height: 10%;
+        height: 18%;
     }
 }
