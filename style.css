@@ -208,6 +208,7 @@ header .cta-commencer:hover{
     background-color: #2D292A;
     border-radius: 8px;
     overflow: hidden;
+    filter: drop-shadow(0px 2px 8px rgba(0,0,0,.4));
 }
 .img{
     display: block;
@@ -216,7 +217,6 @@ header .cta-commencer:hover{
     opacity: 0.5;
     aspect-ratio: 9/10;
     object-fit: cover;
-    filter: drop-shadow(0px 2px 8px rgba(0,0,0,.4));
 }
 .one{
     position: absolute;
