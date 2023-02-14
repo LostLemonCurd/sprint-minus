@@ -658,6 +658,17 @@ footer{
         right: 38%;
     }
 }
+@media screen and (max-width: 730px) {
+    .navOn{
+        flex-direction: column;
+    }
+    header nav .marg{
+        margin-left: 0;
+    }
+    header nav a:not(:last-child){
+        margin-right: 0;
+    }
+}
 @media screen and (max-width: 580px) {
     .grille-4 .col{
         width: calc(100% / 1);
