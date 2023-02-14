@@ -1,3 +1,5 @@
+// HEADER 
+
 let burger = document.querySelector('#burger');
 console.log(burger);
 let nav = document.querySelector('#nav');
@@ -14,18 +16,7 @@ burger.addEventListener('click', function(){
 });
 
 
-let logo = document.querySelector('.logo-header');
-console.log(logo);
-
-
-if (window.matchMedia("(max-width: 1024px)").matches) {
-    logo.setAttribute('src', 'img/logo-footer.png');
-    console.log(logo.getAttribute('src'));
-} else {
-    logo.setAttribute('src', 'img/logo-header.png');
-    console.log(logo.getAttribute('src'));
-}
-
+// FOOTER 
 
 let navMinus = document.querySelector('#nav-minus');
 console.log(navMinus);
