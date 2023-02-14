@@ -12,12 +12,14 @@ body{
     display: none;
 }
 /* Librairie Typo et Boutons */
+.centered{
+    text-align: center;
+}
 .h1{
     font-style: normal;
     font-weight: 600;
     font-size: 70px;
     line-height: 82px;
-    text-align: center;
 }
 .h2{
     font-style: normal;
@@ -30,7 +32,6 @@ body{
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
-    text-align: center;
 }
 .h4{
     font-style: normal;
