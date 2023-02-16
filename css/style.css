@@ -727,6 +727,7 @@ footer{
 
 /* CAMILLE */
 
+/*** MAIN ACHAT CAMILLE ***/
 .purchase-process {
     padding: 40px 0;
     background-color: #D6DEE4;
@@ -734,7 +735,7 @@ footer{
     justify-content: center;
 }
 
-.purchase-process li:not(:last-child) {
+.purchase-process .nav-li:not(:last-child) {
     padding-right: 80px;
 }
 
@@ -744,6 +745,11 @@ footer{
 
 .purchase-process a {
     position: relative;
+}
+
+.purchase-process .link-nav-infos {
+    display: flex;
+    align-items: center;
 }
 
 .purchase-process .line::after {
@@ -802,7 +808,6 @@ footer{
     margin-top: 20px;
 }
 
-/* .main-input-achat  */
 .body-achat input{
     display: block;
     border: 2px solid #7E7A7B;
@@ -886,7 +891,6 @@ input[type=number]::-webkit-outer-spin-button {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
     border-radius: 8px;
     padding: 30px;
-    /* height: fit-content; */
 }
 
 .top-body-achat .recap .recap-title {
@@ -924,6 +928,7 @@ input[type=number]::-webkit-outer-spin-button {
 .top-body-achat .recap .meal-achat img {
     width: 25%;
     aspect-ratio: 5/3;
+    object-fit: cover;
 }
 
 .top-body-achat .recap .price-achat {
@@ -932,6 +937,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 30px 40px 0;
     color: #d62929;
 }
+
 
 /* SECTION LIVRAISON */
 .bottom-body-achat .delivery {
@@ -958,7 +964,11 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .bottom-body-achat .delivery .delivery-info {
-    padding-bottom: 15px;
+    padding-bottom: 20px;
+}
+
+.bottom-body-achat .delivery .grey {
+    color: #7E7A7B;
 }
 
 
@@ -985,7 +995,6 @@ input[type=number]::-webkit-outer-spin-button {
 .bottom-body-achat .form-payment .payment .icons {
     align-items: center;
     display: flex;
-    padding-right: 30px;
 }
 
 .bottom-body-achat .form-payment .payment .icons img {
@@ -1045,6 +1054,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .bottom-body-achat .form-payment .btn-pay {
+    display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
     border-radius: 8px;
@@ -1054,9 +1064,18 @@ input[type=number]::-webkit-outer-spin-button {
     border: none;
 }
 
+.bottom-body-achat .form-payment .btn-pay:hover {
+    background: #FEEAB3;
+    color: #2D292A;
+}
+
+
 /* RESPONSIVE FORM ACHAT */
-/* wrapper / margin à mettre */
 @media screen and (max-width: 1024px) {
+    .wrapper {
+        padding: 80px 30px;
+    }
+
     .body-achat .top-body-achat, .bottom-body-achat {
         flex-direction: column;
     }
@@ -1098,7 +1117,7 @@ input[type=number]::-webkit-outer-spin-button {
         padding-right: 50px;
     }
 
-    .purchase-process div {
+    .purchase-process .responsive-nav-purchase {
         position: relative;
     }
 
