@@ -387,7 +387,7 @@ header .cta-commencer:hover{
     border-radius: 100px;
 }
 .next-btn{
-    rotate: 180deg;
+    transform: rotate(180deg);
 }
 /* BANNIERE-BOTTOM */
 
