@@ -1,4 +1,3 @@
-/* LOUNIS */
 
 /* Import de la police Raleway */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -102,6 +101,16 @@ input:focus,
 input:active{
     outline: 2px solid #FDCA40;
 }
+.bold {
+    font-weight: 700;
+}
+.semibold {
+    font-weight: 600;
+}
+.medium {
+    font-weight: 500;
+}
+
 /* HEADER */
 
 header{
@@ -133,6 +142,9 @@ header .h2:hover{
 header .cta-commencer:hover{
     text-decoration: none;
 }
+
+
+/* LOUNIS */
 
 /* MAIN */
 
@@ -404,6 +416,1571 @@ header .cta-commencer:hover{
 .banniere-bottom-infos p{
     margin-bottom: 20px;
 }
+/* FIN LOUNIS */
+
+
+/* CAMILLE */
+
+.purchase-process {
+    padding: 40px 0;
+    background-color: #D6DEE4;
+    display: flex;
+    justify-content: center;
+}
+
+.purchase-process li:not(:last-child) {
+    padding-right: 80px;
+}
+
+.purchase-process img {
+    display: none;
+}
+
+.purchase-process a {
+    position: relative;
+}
+
+.purchase-process .line::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1.5px;
+    background-color: #2D292A;
+    border-radius: 100px;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    margin-left: 20px;
+}
+
+.wrapper {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.body-achat {
+    padding: 80px 0;
+}
+
+.body-achat .headline {
+    margin-bottom: 50px;
+}
+
+.body-achat .headline h2 {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.body-achat .headline .info-headline {
+    border: 2px solid #30AA3C;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.body-achat .headline .info-headline p {
+    padding-left: 25px;
+}
+
+.body-achat .top-body-achat, .bottom-body-achat {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.body-achat .top-body-achat {
+    margin-bottom: 75px;
+}
+
+.body-achat .space {
+    margin-top: 20px;
+}
+
+/* .main-input-achat  */
+.body-achat input{
+    display: block;
+    border: 2px solid #7E7A7B;
+    color: #7E7A7B;
+    border-radius: 8px;
+    margin: 5px 0;
+    padding: 8px 15px;
+    width: 100%;
+    font-family: 'Raleway';
+}
+
+.body-achat input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.body-achat .inner-password-achat, .inner-city-achat, .inner-security-number {
+    position: relative;
+}
+
+.body-achat .img-absolute-achat {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    color: #7E7A7B;
+    transform: translate(0, -50%);
+    width: 18px;
+}
+
+.body-achat form p {
+    color: #7E7A7B;
+}
+
+.recap, .form-account, .delivery, .form-payment {
+    width: 100%;
+}
+
+.body-achat .recap, .delivery {
+    margin-left: 100px;
+}
+
+.body-achat .hr-form {
+    width: 400px;
+}
+
+
+/* SECTION FORM COMPTE + LIVRAISON */
+.top-body-achat .form-account {
+    padding-top: 30px;
+}
+
+.top-body-achat .form-account .account-achat {
+    margin-bottom: 75px;
+}
+
+.top-body-achat .form-account .password-form-informations p {
+    text-align: end;
+}
+
+.top-body-achat .form-account .choice-delivery-achat {
+    margin: 75px 0;
+}
+
+.top-body-achat .form-account .postcode-form-achat, .city-form-achat {
+    width: 100%;
+}
+
+.top-body-achat .form-account .postcode-form-achat {
+    padding-right: 20px;
+}
+
+.top-body-achat .form-account .column-adress {
+    display: flex;
+}
+
+
+/* SECTION RECAP */
+.top-body-achat .recap {
+    background-color: #F9F8F8;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
+    border-radius: 8px;
+    padding: 30px;
+    /* height: fit-content; */
+}
+
+.top-body-achat .recap .recap-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.top-body-achat .recap .recap-headline {
+    margin: 0 25px;
+}
+
+.top-body-achat .recap .recap-subscription {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-body-achat .recap .list-meals {
+    padding: 30px 0;
+}
+
+.top-body-achat .recap .meal-achat {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.top-body-achat .recap .meal-achat:not(:last-child) {
+    padding-bottom: 30px;
+}
+
+.top-body-achat .recap .meal-achat p {
+    padding-left: 30px;
+}
+
+.top-body-achat .recap .meal-achat img {
+    width: 25%;
+    aspect-ratio: 5/3;
+}
+
+.top-body-achat .recap .price-achat {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 40px 0;
+    color: #d62929;
+}
+
+/* SECTION LIVRAISON */
+.bottom-body-achat .delivery {
+    background-color: #F9F8F8;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
+    border-radius: 8px;
+    padding: 30px;
+    height: fit-content;
+}
+
+.bottom-body-achat .delivery .delivery-title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.bottom-body-achat .delivery .delivery-edit {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-body-achat .delivery .delivery-edit a {
+    color: #d62929;
+    text-decoration: none;
+}
+
+.bottom-body-achat .delivery .delivery-info {
+    padding-bottom: 15px;
+}
+
+
+/* SECTION PAIEMENT */
+.bottom-body-achat .form-payment {
+    padding-top: 30px;
+}
+
+.bottom-body-achat .form-payment .payment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom-body-achat .form-payment .payment .check_card {
+    display: flex;
+    align-items: center;
+}
+
+.bottom-body-achat .form-payment .payment .check_card img {
+    padding-right: 15px;
+}
+
+.bottom-body-achat .form-payment .payment .icons {
+    align-items: center;
+    display: flex;
+    padding-right: 30px;
+}
+
+.bottom-body-achat .form-payment .payment .icons img {
+    width: 40px;
+}
+
+.bottom-body-achat .form-payment .payment .icons img:not(:first-child) {
+    padding-left: 5px;
+}
+
+.bottom-body-achat .form-payment .column-card {
+    display: flex;
+}
+
+.bottom-body-achat .form-payment .card, .expire {
+    width: 100%;
+}
+
+.bottom-body-achat .form-payment .column-card .card {
+    padding-right: 20px;
+}
+
+.bottom-body-achat .form-payment .security-number {
+    width: 50%;
+    padding-right: 15px;
+}
+
+.bottom-body-achat .form-payment .paypal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #7E7A7B;
+    background-color: #ffffff;
+    border: 2px solid #7E7A7B;
+    border-radius: 8px;
+    width: 100%;
+    padding: 10px 15px 10px 10px;
+    margin-top: 20px;
+    
+}
+
+.bottom-body-achat .form-payment .paypal:hover {
+    text-decoration: none;
+}
+
+.bottom-body-achat .form-payment .paypal .add_paypal {
+    display: flex;
+    align-items: center;
+}
+
+.bottom-body-achat .form-payment .paypal .add_paypal img {
+    padding-right: 5px;
+}
+
+.bottom-body-achat .form-payment .paypal .logo_paypal {
+    width: 20px;
+}
+
+.bottom-body-achat .form-payment .btn-pay {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, rgba(248,137,40,1) 0%, rgba(249,194,54,1) 35%, rgba(255,218,106,1) 100%);
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+}
+
+/* RESPONSIVE FORM ACHAT */
+/* wrapper / margin à mettre */
+@media screen and (max-width: 1024px) {
+    .body-achat .top-body-achat, .bottom-body-achat {
+        flex-direction: column;
+    }
+
+    .body-achat .recap, .delivery {
+        margin-left: 0; 
+    }
+
+    .delivery-notes, .hr-form, .nav-box  {
+        display: none;
+    }
+
+    .body-achat .top-body-achat {
+        margin-bottom: 0;
+    }
+
+    .top-body-achat .form-account .choice-delivery-achat {
+        margin-top: 0;
+    }
+
+    .account-achat, .recap, .choice-delivery-achat, .delivery {
+        margin-bottom: 50px;
+    }
+
+    .purchase-process img {
+        display: block;
+    }
+
+    .purchase-process {
+        display: flex;
+        align-items: center;
+    }
+
+    .purchase-process .icon-nav-choice-space {
+        padding-right: 15px;
+    }
+
+    .purchase-process .icon-nav-choice {
+        padding-right: 50px;
+    }
+
+    .purchase-process div {
+        position: relative;
+    }
+
+    .purchase-process span {
+        position: absolute;
+        width: 20px;
+        height: 1.5px;
+        background-color: #2D292A;
+        border-radius: 100px;
+        left: 50%;
+        top: 50%;
+    }
+}
+
+/* FIN CAMILLE */
+
+/* AROUNA */
+
+/* CONNEXION */
+/*Formulaire */
+
+.form{
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    top: 30%;
+    background-color: #E0E7EC;
+    left: 35%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+}
+
+.form *{
+    
+    color: black;
+    letter-spacing: 0.5;
+    outline: none;
+    border: none;
+
+}
+.form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+.form label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;    
+}
+.form input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.form ::placeholder{
+    color: black;
+    background: white ;
+
+}
+
+.form button{
+    margin-top: 50px;
+    width: 100%;
+    height: 10%;
+    background-color: #fff;
+    color: #080710;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+.social{
+    margin-top: 30px;
+    display: flex;
+}
+
+.social div{
+    background: red;
+    width: 150px;
+    border-radius: 3px;
+    padding: 5px 10px 10px 5px;
+    background-color: rgba(255, 255, 255, 0.27);
+    color: #000;
+    text-align: center;
+}
+
+.social div:hover{
+    background-color: rgba(255, 255, 255, 0.47);
+}
+
+.social .fb{
+    margin-left: 25px;
+}
+
+.social i{
+    margin-right: 4px;
+}
+.compte{
+    display: flex;
+    font-size: 14px;
+    gap :2px;
+    margin-top: 8px;
+}
+@media screen and (max-width: 1024px) {
+
+    .form{
+        top: 25%;
+        left: 12%;
+    }
+}
+
+/* INSCRIPTION */
+
+/*Formulaire */
+.form{
+    height: 1000px;
+    width: 800px;
+    background-color: #E0E7EC;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+    align-content: center;
+}
+
+
+.form *{
+  
+    color: black;
+    letter-spacing: 0.5;
+    outline: none;
+    border: none;
+
+}
+.form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+.form label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;    
+}
+.form input{
+    display: block;
+    height: 50px;
+    width: 50%;
+    background-color: rgba(255,255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: black;
+    background: white;
+
+}
+
+.form button{
+    margin-top: 50px;
+    width: 100%;
+    height: 10%;
+    background-color: #fff;
+    color: #080710;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+.gif{
+    position: absolute;
+    left: 55%;
+    top: 35%;
+    margin-top: 15%;
+    
+}
+.gif img{
+    width: 60%;
+    height: auto;
+}
+/*Formulaire */
+@media screen and (max-width: 1024px) {
+
+    .form{
+        top: 16%;
+        left: 10%;
+        width: 80%;
+    }
+    .gif {
+        width: 30%;
+        right: 5%;
+        top: 70%;
+        margin-left: 5%;
+    }
+}
+
+/* RECETTE */
+
+.choix{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    background: #d6dee4;
+    
+}
+.choix p{
+    margin-top: 2%;
+}
+.images{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.images img{
+    width: 100%;
+}
+.images .image{
+    position: absolute;
+    margin: 13% 13%;
+    color: white;
+    background: black;
+    opacity: 70%;
+    padding: 20px 20px;
+}
+
+.bar-menu{
+    display: flex;
+    position: sticky;
+    bottom: 0px;
+    background: white;
+    gap: 5px;
+    text-align: center;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    height: 80px;
+    box-shadow: rgb(0 0 0 / 10%) 0px -2px 4px;
+    
+}
+.bar-menu .numero{
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 10%;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 30%;
+    
+    width: 50px;
+    height: 50px;
+    margin-top: 1px;
+    
+}
+.bar-menu .numero p{
+    
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #feeab3;
+    border-color:#feeab3 ;
+    border-radius: 10%;
+    color: #fdca40;
+   
+    
+}
+.bar-menu .continuer{
+    padding: 10px 39px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, rgba(248,137,40,1) 0%, rgba(249,194,54,1) 35%, rgba(255,218,106,1) 100%);
+    cursor: pointer;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 31px;
+    margin-right: 10%;
+    height: 40%;
+    margin-top: 15px;
+}
+
+.recettes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 12%;
+    width: 80%;
+    
+    
+
+}
+.filtre select {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    font-size: 15px;
+    
+  }
+  .filtre select:hover{
+    box-shadow: black;
+  }
+
+.filtre{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+   
+    margin-left: 18%;
+}
+
+.filtre .span{
+    display:flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 40%;
+    gap: 5px;
+    margin-right: 15%;
+}
+.filtre .span a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border: solid;
+    width: 40%;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    color: white;
+}
+.filtre .span a:hover{
+    transition: 0.8;
+    animation: alternate;
+    background-color: blue;
+}
+.calendrier{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.calendrier i{
+    color: #d9d9d9;
+}
+.recette img{
+    
+    height: auto;
+    border-radius: 50px;    
+    width: 300px;
+    padding: 15px 15px;
+    object-fit: cover;
+    transition: transform 0.8s;
+    height: 200px;
+    
+
+}
+.recette img:hover{
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+.recette{
+    overflow: hidden;
+    flex-grow: 1;
+    border-radius: 50px;
+   
+    width: 30%;
+    
+
+}
+
+.recette h2{
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    position: absolute;
+    margin-top: -7%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2%;
+    border: solid black;
+     border-radius: 5px;
+     background-color: black;
+    opacity: 70%;
+    width: 20%;
+    color: white; 
+    transition: transform 0.8s;
+
+    
+   
+}
+/*.recette:hover h2{
+    margin-left: 2%;
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}*/
+.icon{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+.icon i{
+    padding: 10px 10px;
+    border-radius: 90px;
+    color: linear-gradient(90deg, rgba(248,137,40,1) 0%, rgba(249,194,54,1) 35%, rgba(255,218,106,1) 100%);
+    background: linear-gradient(90deg, rgba(248,137,40,1) 0%, rgba(249,194,54,1) 35%, rgba(255,218,106,1) 100%);
+    color: white
+}
+
+.icon:hover i{
+    transition: 0.4s;
+    background: blue;
+}
+@media screen and (max-width: 1024px) {
+    /*Reccete */
+    .recette{
+        margin-left: 5%;
+        width: 60%;
+        
+    }
+    .recette img{
+        object-fit: cover;
+        width: 100%;
+        height: 200px;
+        
+    }
+    .recette h2 {
+        font-size: 12px;
+        font-weight: 600;
+        position: absolute;
+        margin-top: -16%;
+        margin-left: 6%;
+        border: solid black;
+        border-radius: 5px;
+        background-color: black;
+        opacity: 70%;
+        width: 60%;
+        color: white;
+        transition: transform 0.8s;
+      }
+      
+    /*Reccete */
+
+    /*Icon */
+       .icon {
+            position: relative;
+            
+       }
+    /*Icon */
+
+    /*Bar-Menu */
+    .bar-menu .numero{
+        font-size: 10px;
+        padding: 5px 9px;
+    }
+    .bar-menu .continuer {
+        padding: 5px 9px;
+        border-radius: 8px;
+        background: linear-gradient(90deg, rgba(248,137,40,1) 0%, rgba(249,194,54,1) 35%, rgba(255,218,106,1) 100%);
+        cursor: pointer;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 31px;
+        margin-right: 5%;
+        height: 40%;
+        margin-top: 15px;
+      }
+    /*Bar-Menu */
+      .calendrier{
+        font-size: 13px;
+      }
+    /*CHoix */
+    .choix {
+        display: flex;
+        align-content: center;
+      justify-content: center;
+        gap: 10px;
+        background: #d6dee4;
+        font-size: 8px;
+      }
+    /*Choix */
+
+    /*Bar*/
+    .filtre .span a {
+        
+        font-size: 20px;
+        
+        width: 69%;
+        
+        padding: 5px 5px;
+      }
+
+    /*Bar*/
+
+}
+
+/* FIN AROUNA */
+
+/* MARIE CLAIRE */
+
+/* MAIN */
+
+.purchase-process {
+    padding: 40px 0;
+    background-color: #D6DEE4;
+    display: flex;
+    justify-content: center;
+}
+
+.purchase-process li:not(:last-child) {
+    padding-right: 80px;
+}
+
+.purchase-process a {
+    position: relative;
+}
+
+.line::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1.5px;
+    background-color: #2D292A;
+    border-radius: 100px;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    margin-left: 20px;
+}
+
+.premier{
+    background-color: #E0E7EC;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    height: 90%;
+    width: 70%;
+    border-radius: 20px;
+    padding: 100px 100px;
+}
+
+
+.titre{
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.abnt{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.p2{
+    text-align: center;
+    margin-bottom: 5%;
+
+}
+
+.deuxieme{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td{
+    padding: 15px;
+}
+
+.le{
+    background-color: #FEEAB3;
+}
+
+.troisieme{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 90px;
+}
+
+.mail{
+    width: 95%;
+    height: 50px;
+    margin-bottom: 7%;
+}
+
+.quatrieme{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10%;
+}
+
+.cinquieme{
+    display: flex;
+    justify-content: center;
+}
+
+/* MAIN */
+@media screen and (max-width: 1024px) {
+    /* MAIN */
+
+    .abnt{
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .deuxieme{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 90px;
+    }
+    .nbre{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .troisieme, .quatrieme{
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    td{
+        padding: 10px;
+    }
+    .mail{
+        border-radius: 15px;
+    }
+    .quatrieme{
+        margin-top: 20px;
+    }
+    .cinquieme{
+        margin-top: 100px;
+    }
+
+}
+/* FIN MARIE CLAIRE */
+
+/* CHAIMA */
+
+                                            /* Tunnel de vente */
+ul .tunnel{
+
+ display: flex;
+ align-items: center;
+ width: 100%;
+ margin: 0;
+ 
+
+ 
+}
+ .tunnel {
+    display: flex;
+    background-color:#D6DEE4; 
+    justify-content: center;
+    padding: 40px 0;
+
+     
+
+}
+.tunnel a{
+    font-size: 20px;
+    position: relative;
+}
+ .tunnel li{
+    padding-right: 80px;
+ }
+
+.line::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1.5px;
+    background-color: #2D292A;
+    border-radius: 100px;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    margin-left: 20px;
+    
+}
+
+/* image bckg */
+ .bck-img img{
+    position: relative;
+ }
+
+ .icons-grp {
+   position: absolute;
+    margin-top: -50px;
+left: 20px; 
+
+
+}
+
+.icons-bio {
+   margin-left: 100px;
+
+}
+.dates{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 40px;
+   margin : 0px;
+
+}
+ .lun-dim{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    font-size: 22px;
+ }
+
+ div .btn-parent{
+    display: flex;
+    justify-content:center;
+    gap: 350px;
+    text-align: center;
+ }
+ 
+.flt-btn{
+    display: inline-block;
+    background-color: #D9D9D9;
+    width: 105px;
+    margin: 10;
+    color: #000000;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+    border: solid 2px #ccc;
+    margin-top:-0.75% ;
+  }
+  
+
+
+
+.flt-btn:hover{
+background-color: #D6DEE4;
+    color: #000000;
+}
+.flt-btn:active{
+    background-color: #3e5464;
+    color: #282627;
+}
+
+
+
+.btn-group{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+div .btn-group span {
+    background-color: #D9D9D9;
+    color: #000000;
+    padding: 6px 24px 6px 24px;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-bottom : 10%;
+}
+div.btn-group span:hover{
+    background-color: #D6DEE4;
+    color: #2D292A;
+}
+div.btn-group span:active{
+    background-color:  #475560;
+}
+
+
+                     /* serie d'image  */
+ .wrapper-img{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   }
+
+   .card-img { 
+        border-radius: 15px 15px 15px 15px;
+        width: 380px ;
+        height: 250px;
+    margin-top: 5%;
+    transition: transform 0.8s;
+    height: auto;
+    object-fit: cover;
+   }
+
+   .picture img {
+    position: relative;
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        transition: transform 0.8s;
+        border-radius: 15px;
+   }
+    
+   .picture:hover img {
+        overflow: hidden;
+        transform: scale(1.1);
+        -webkit-transform: scale(1.3);
+        width: 100%;
+   }
+
+   .picture  {
+    overflow: hidden;
+    flex-grow: 1;
+    border-radius: 15px 15px 15px 15px;
+    padding: 15px ;
+
+          }
+  
+                /* icon + */
+   
+  .fa-solid{
+    padding: 10px 10px;
+    border-radius: 90px;
+    color: linear-gradient(90deg, rgba(248,137,40,1) 0%, rgba(249,194,54,1) 35%, rgba(255,218,106,1) 100%);
+    background: linear-gradient(90deg, rgba(248,137,40,1) 0%, rgba(249,194,54,1) 35%, rgba(255,218,106,1) 100%);
+    color: white;
+    position: absolute;
+    margin-left: 11%;
+    margin-top: 40px;
+   
+   }
+
+
+                                     /* BAR STICKY */
+
+.bar-parent {
+    position: relative;
+    display: flex;
+    position: sticky;
+    background-color: rgb(255, 255, 255);
+    bottom: 0px;
+    box-shadow: rgb(0 0 0 / 10%) 0px -2px 4px;
+    left: 0px;
+    right: 0px;
+    height: 80px;
+    margin-top: 9%;
+}
+.nmbrs{
+    
+    max-width: 960px;
+    display: flex;
+        padding: 10px 0px;
+        justify-content: center;
+        align-items: center;
+        transform: none;
+    height: 80px;
+
+        padding: 20px;
+        gap: 10px;
+        margin-left: 4%;
+        bottom: 80;
+    
+}
+
+
+.sc-8679d5dd-6{
+    
+    width: 50px;
+    height: 50px;
+    transform: none;
+    padding: 10px;
+     gap: 10px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10%;
+    background-color: #FEEAB3;
+    color: #FDCA40;
+}
+
+
+.card .picture p{
+    width: auto;
+    height: auto;
+    background-color: #00000072;
+    font-size: 23px;
+    margin-top: -5%;
+    position: absolute;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+
+
+  div img .img1{
+    border-radius: 10%;
+ }
+
+
+.span{display:block;
+    position: absolute; 
+    margin-top:-3.38%;
+}
+
+ button.btn-continuer{
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 26px;
+margin-left: 855%;
+padding: 10px;
+border: none;
+border-radius: 8px;
+background: linear-gradient(90deg, rgba(248,137,40,1) 0%, rgba(249,194,54,1) 35%, rgba(255,218,106,1) 100%);
+cursor: pointer;
+margin-top: 47.5% ;
+}
+
+
+.btn-continuer:hover{
+    background:  #FEEAB3;
+    text-decoration: none;
+}
+    
+
+    
+@media screen and (max-width: 1024px){
+
+.tunnel{
+    display:flex;
+    width: 100%;
+    height: 100%;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: center;
+}
+
+.tunnel a {
+    font-size: 16px ;
+}
+
+.line::after {
+    content: '';
+    display: block;
+    width: 20px;  
+}
+.icons-grp {
+    left: -20px; 
+   
+     margin-top: -17px;
+ }
+ .icons  {
+    width: 25px;
+    margin-left: 30px;
+ }
+ 
+ .dates{
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin : 0px;
+    
+    
+ 
+ }
+  .lun-dim{
+     margin-left: 5px;
+     margin-right: 5px;
+     padding: 10px;
+     font-size: 18px;
+  }
+ 
+  div .btn-parent{
+    display: flex;
+    justify-content:center;
+    gap: 35px;
+    text-align: center;
+ }
+ 
+.flt-btn{
+    display: inline-block;
+    background-color: #D9D9D9;
+    width: 80px;
+    margin-left: 10;
+    color: #000000;
+    font-size: 14px;
+   padding: 5px;
+  }
+  
+
+
+
+
+.btn-group{
+    display: flex;
+    justify-content: center;
+    gap: -5px;
+}
+
+div .btn-group span {
+    background-color: #D9D9D9;
+    color: #000000;
+    font-size: 14px;
+    border-radius: 8px;
+    margin-bottom : -10%;
+    padding: 5px;
+ 
+}
+
+    
+                     /* serie d'image  */
+ .wrapper{
+    margin-top: 0px;
+    height: 100%;
+    gap: 80px;
+   }
+
+   .card { 
+        border-radius: 15px 15px 15px 15px;
+        width: 300px ;
+        height: 150px;
+    margin-top: 5%;
+    transition: transform 0.8s;
+    height: auto;
+    object-fit: cover;
+   }
+
+   .picture img {
+    position: relative;
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        transition: transform 0.8s;
+        border-radius: 15px;
+   }
+    
+   
+   
+
+          
+  
+                /* icon + */
+   
+  .fa-solid{
+    
+    margin-left: 35%;
+    margin-top: 40px;
+   
+   }}
+
+
+                                     /* BAR STICKY */
+@media screen and (max-width: 730px) { 
+.bar-parent {
+    position: sticky;
+    background-color: rgb(255, 255, 255);
+    bottom: 0px;
+    box-shadow: rgb(0 0 0 / 10%) 0px -2px 4px;
+   
+    height: 80px;
+    margin-top: 7%;
+}
+.nmbrs{
+    max-width: 100%;
+    height: 100%;
+    
+        justify-content: flex-start;
+        align-items: center;
+        transform: none;
+        padding: 4px;
+        gap: 2.5px;
+    
+}
+
+
+.sc-8679d5dd-6{
+    
+    width: 35px;
+    height: 35px;
+    transform: none;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10%;
+    background-color: #FEEAB3;
+    color: #FDCA40;
+}
+
+
+.card .picture p{
+    width: auto;
+    height: auto;
+    background-color: #00000072;
+    font-size: 23px;
+    margin-top: -5%;
+    position: absolute;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+.span{
+    margin-top:-3.38%;
+}
+
+ button.btn-continuer{
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+margin-left: 330%;
+padding: 3px;
+border: none;
+border-radius: 8px;
+background: linear-gradient(90deg, rgba(248,137,40,1) 0%, rgba(249,194,54,1) 35%, rgba(255,218,106,1) 100%);
+cursor: pointer;
+margin-top: 37% ;
+
+}
+}
+
+/* FIN CHAIMA */
+
+
+
+
+
 
 
 
