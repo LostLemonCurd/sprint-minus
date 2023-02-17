@@ -208,6 +208,7 @@ header .cta-commencer:hover{
     height: 100%;
     position: absolute;
     object-fit: cover;
+    opacity: 0.8;
 }
 .banniere-info{
     display: flex;
