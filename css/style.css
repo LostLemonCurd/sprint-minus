@@ -111,7 +111,50 @@ input:active{
 .medium {
     font-weight: 500;
 }
+/* TUNNEL D'ACHAT */
+.purchase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #D6DEE4;
+    padding: 40px 0;
+}
 
+.purchase li {
+    display: flex;
+    align-items: center;
+}
+
+.purchase li a {
+    display: flex;
+    align-items: center;
+}
+
+.purchase li a img {
+    margin-right: 10px;
+}
+
+.purchase li .trait {
+    background-color: black;
+    width: 20px;
+    height: 1px;
+    display: block;
+    margin-left: 10px;
+}
+
+.purchase li:last-child .trait {
+    display: none;
+}
+@media screen and (max-width: 1024px) {
+    .purchase li a span{
+        display: none;
+    }
+
+    .purchase li.active a span {
+        display: block;
+    }
+}
 /* HEADER */
 
 header{
@@ -735,44 +778,6 @@ footer{
 
 /* CAMILLE */
 
-/*** MAIN ACHAT CAMILLE ***/
-.purchase-process {
-    padding: 40px 0;
-    background-color: #D6DEE4;
-    display: flex;
-    justify-content: center;
-}
-
-.purchase-process .nav-li:not(:last-child) {
-    padding-right: 80px;
-}
-
-.purchase-process img {
-    display: none;
-}
-
-.purchase-process a {
-    position: relative;
-}
-
-.purchase-process .link-nav-infos {
-    display: flex;
-    align-items: center;
-}
-
-.purchase-process .line::after {
-    content: '';
-    display: block;
-    width: 40px;
-    height: 1.5px;
-    background-color: #2D292A;
-    border-radius: 100px;
-    position: absolute;
-    left: 100%;
-    top: 50%;
-    margin-left: 20px;
-}
-
 .wrapper {
     max-width: 1220px;
     margin: 0 auto;
@@ -1108,36 +1113,6 @@ input[type=number]::-webkit-outer-spin-button {
         margin-bottom: 50px;
     }
 
-    .purchase-process img {
-        display: block;
-    }
-
-    .purchase-process {
-        display: flex;
-        align-items: center;
-    }
-
-    .purchase-process .icon-nav-choice-space {
-        padding-right: 15px;
-    }
-
-    .purchase-process .icon-nav-choice {
-        padding-right: 50px;
-    }
-
-    .purchase-process .responsive-nav-purchase {
-        position: relative;
-    }
-
-    .purchase-process span {
-        position: absolute;
-        width: 20px;
-        height: 1.5px;
-        background-color: #2D292A;
-        border-radius: 100px;
-        left: 50%;
-        top: 50%;
-    }
 }
 
 /* FIN CAMILLE */
@@ -1729,7 +1704,9 @@ input[type=number]::-webkit-outer-spin-button {
 /* MARIE CLAIRE */
 
 /* MAIN */
-
+.main-mc{
+    background: url(/img/body.jpg);
+}
 .purchase-process {
     padding: 40px 0;
     background-color: #D6DEE4;
