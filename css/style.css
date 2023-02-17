@@ -2208,8 +2208,9 @@ div.btn-group span:active{
     }
     
 .icons-grp {
+    display: flex;
     margin-left: -23px; 
-     margin-top: -20px;
+    margin-top: -20px;
  }
  .icons-bio {
     width: 22px;
