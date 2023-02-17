@@ -1339,15 +1339,18 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* RECETTE */
 
-.images{
+.images {
+    position: relative;
     display: flex;
     align-content: center;
     justify-content: center;
 }
-.images img{
+
+.images img {
     width: 100%;
 }
-.images .image{
+
+.images .image {
     position: absolute;
     margin: 13% 13%;
     color: white;
@@ -1356,21 +1359,21 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 20px 20px;
 }
 
-.images .biolo{
-   
+.images .biolo {
+
     display: flex;
     position: absolute;
     width: 500px;
-    top: 95%;
-    right: 60%;
+    bottom: 5%;
+    left: 10%;
     gap: 30%;
-
 }
-.images .biolo img{
+
+.images .biolo img {
     width: 50px;
 }
 
-.bar-menu{
+.bar-menu {
     display: flex;
     position: sticky;
     bottom: 0px;
@@ -1382,10 +1385,11 @@ input[type=number]::-webkit-outer-spin-button {
     width: 100%;
     height: 80px;
     box-shadow: rgb(0 0 0 / 10%) 0px -2px 4px;
-    
+
 }
-.bar-menu .numero{
-    
+
+.bar-menu .numero {
+
     display: flex;
     justify-content: center;
     align-content: center;
@@ -1393,30 +1397,34 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 1.5em;
     font-weight: bold;
     margin-left: 30%;
-    
+
     width: 50px;
     height: 50px;
     margin-top: 1px;
-    
+
 }
-.bar-menu .numero p{
-    
+
+.bar-menu .numero p {
+
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background: #feeab3;
-    border-color:#feeab3 ;
+    border-color: #feeab3;
     border-radius: 10%;
     color: #fdca40;
     margin-top: 40%;
-   
-    
+
+
 }
-.bar-menu .continuer{
+
+.bar-menu .continuer {
+    display: flex;
+    align-items: center;
     padding: 10px 39px;
     border-radius: 8px;
-    background: linear-gradient(90deg, rgba(248,137,40,1) 0%, rgba(249,194,54,1) 35%, rgba(255,218,106,1) 100%);
+    background: linear-gradient(90deg, rgba(248, 137, 40, 1) 0%, rgba(249, 194, 54, 1) 35%, rgba(255, 218, 106, 1) 100%);
     cursor: pointer;
     font-family: 'Raleway';
     font-style: normal;
@@ -1424,21 +1432,22 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 26px;
     line-height: 31px;
     margin-right: 10%;
-    height: 40%;
+    height: 60%;
     margin-top: 15px;
 }
 
-.recettes{
+.recettes {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    margin-left: 12%;
+    margin: 0 auto;
     width: 80%;
-    
-    
+    gap: 100px;
+
 
 }
+
 .filtre select {
     display: inline-block;
     padding: 10px;
@@ -1447,30 +1456,32 @@ input[type=number]::-webkit-outer-spin-button {
     border: 2px solid #ccc;
     border-radius: 15px;
     font-size: 15px;
-    
-  }
-  .filtre select:hover{
-    box-shadow: black;
-  }
 
-.filtre{
+}
+
+.filtre select:hover {
+    box-shadow: black;
+}
+
+.filtre {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 60%;
-   
+
     margin-left: 18%;
 }
 
-.filtre .span{
-    display:flex;
+.filtre .span {
+    display: flex;
     align-content: center;
     justify-content: space-between;
     width: 40%;
     gap: 5px;
     margin-right: 15%;
 }
-.filtre .span a{
+
+.filtre .span a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1481,207 +1492,208 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: #d9d9d9;
     color: white;
 }
-.filtre .span a:hover{
+
+.filtre .span a:hover {
     transition: 0.8;
     animation: alternate;
     background-color: blue;
 }
-.calendrier{
+
+.calendrier {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     margin-top: 2%;
 }
-.calendrier i{
+
+.calendrier i {
     color: #d9d9d9;
+    position: relative;
+    margin: 0;
+    background: #F0EEF4;
 }
-.recette img{
-    
-    height: auto;
-    border-radius: 50px;    
+
+.recette img {
+    border-radius: 50px;
     width: 300px;
-    padding: 15px 15px;
     object-fit: cover;
     transition: transform 0.8s;
-    height: 200px;
-    
+    width: 100%;
+    height: 250px;
 
 }
-.recette img:hover{
+
+.recette .image-wrapper:hover > img {
     -ms-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
 }
 
 
-.recette{
-    overflow: hidden;
+.recette {
+    position: relative;
     flex-grow: 1;
     border-radius: 50px;
-   
-    width: 30%;
-    
+    border-radius: 15px;
+    flex: 5 25%;
+
 
 }
 
-.recette .h2{
+.recette .h2 {
+    position: absolute;
+    bottom: 10%;
+    border: solid black;
+    border-radius: 5px;
+    background-color: black;
+    text-align: center;
+    opacity: 70%;
+    width: 100%;
+    color: white;
     font-size: 18px;
     font-weight: 600;
-    display: flex;
-    position: absolute;
-    margin-top: -7%;
-    align-items: center;
-    justify-content: center;
-    margin-left: 2%;
-    border: solid black;
-     border-radius: 5px;
-     background-color: black;
-    opacity: 70%;
-    width: 20%;
-    color: white; 
     transition: transform 0.8s;
 
-    
-   
+
+
 }
+
+.recette .image-wrapper {
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
 /*.recette:hover h2{
     margin-left: 2%;
     -ms-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
 }*/
-.iconique{
-    width: 100%;
-    height: 100%;
+.iconique {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
     display: flex;
-    margin-top: 10%;
-    margin-bottom: 10%;
     font-size: 20px;
     text-align: center;
     justify-content: center;
     align-items: center;
-    
+
 }
-.iconique i{
+
+.iconique i {
     padding: 10px 10px;
     border-radius: 90px;
-    color: linear-gradient(90deg, rgba(248,137,40,1) 0%, rgba(249,194,54,1) 35%, rgba(255,218,106,1) 100%);
-    background: linear-gradient(90deg, rgba(248,137,40,1) 0%, rgba(249,194,54,1) 35%, rgba(255,218,106,1) 100%);
+    color: linear-gradient(90deg, rgba(248, 137, 40, 1) 0%, rgba(249, 194, 54, 1) 35%, rgba(255, 218, 106, 1) 100%);
+    background: linear-gradient(90deg, rgba(248, 137, 40, 1) 0%, rgba(249, 194, 54, 1) 35%, rgba(255, 218, 106, 1) 100%);
     color: white
 }
 
-.iconique:hover i{
+.iconique:hover i {
     transition: 0.4s;
     background: blue;
 }
 @media screen and (max-width: 1024px) {
-    .images .image{
+    .images .image {
         display: flex;
         justify-content: center;
         align-items: center;
-    
+
         width: 20%;
         padding: 5px 5px;
         font-size: 10px;
         margin-top: 10px;
         border-radius: 15%;
     }
-    /*Reccete */
-    .recette{
+
+    /* /Reccete/ */
+    .recette {
         margin-left: -6%;
         width: 60%;
-        
+
     }
-    .recette img{
+
+    .recette img {
         object-fit: cover;
         width: 100%;
         height: 200px;
-        
+
     }
+
     .recette .h2 {
-        font-size: 12px;
-        font-weight: 600;
-        position: absolute;
-        margin-top: -16%;
-        margin-left: 14%;
-        border: solid black;
-        border-radius: 5px;
-        background-color: black;
-        opacity: 70%;
-        width: 60%;
-        color: white;
-        
-      }
-      
-    /*Reccete */
+        opacity: 100%;
 
-    /*Icon */
-       .icon {
-            position: relative;
-            
-       }
-    /*Icon */
+    }
 
-    /*Bar-Menu */
-    .bar-menu .numero p{
+    /* /Reccete/ */
+
+    .recette {
+        flex: 0 100%;
+    }
+    /* /Icon/ */
+    .icon {
+        position: relative;
+
+    }
+
+    /* /Icon/
+
+    /Bar-Menu/ */
+    .bar-menu .numero p {
         padding: 10px;
         margin-top: 50%;
     }
-    .bar-menu .numero{
+
+    .bar-menu .numero {
         font-size: 9px;
-        
-        
+
+
     }
+
     .bar-menu .continuer {
         padding: 0px 9px;
-        border-radius: 8px;
-        background: linear-gradient(90deg, rgba(248,137,40,1) 0%, rgba(249,194,54,1) 35%, rgba(255,218,106,1) 100%);
-        cursor: pointer;
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 400;
         font-size: 10px;
-        line-height: 31px;
         margin-right: 5%;
-        height: 40%;
         margin-top: 20px;
-      }
-    /*Bar-Menu */
-      .calendrier{
+    }
+
+    /* /Bar-Menu/ */
+    .calendrier {
         font-size: 10px;
         margin-top: 4%;
-      }
+    }
 
-    /*Bar*/
-    .filtre{
+    /* /Bar/ */
+    .filtre {
         margin-right: 3%;
     }
-    .filtre .span a {
-        
-        font-size: 9px;
-        
-        width: 69%;
-        
-        padding: 5px 5px;
-      }
 
-    /*Bar*/
-    .images .biolo{
-   
+    .filtre .span a {
+
+        font-size: 9px;
+
+        width: 69%;
+
+        padding: 5px 5px;
+    }
+
+    /* /Bar/ */
+    .images .biolo {
+
         display: flex;
         position: absolute;
-        width: 161px;
-        top: 49%;
-        right: 60%;
-        gap: 30%;
-    
+        width: 50px;
+        bottom: 0;
+        gap: 5px;
+
     }
-    .images .biolo img{
-        width: 29px;
+    .images .biolo img {
+        width: 22px;
     }
 
-    /*Bar*/
+    
 }
 
 /* FIN AROUNA */
