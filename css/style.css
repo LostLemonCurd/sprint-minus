@@ -1938,11 +1938,10 @@ td{
  }
 
  .icons-grp {
-   position: absolute;
+    position: absolute;
+    display: flex;
     margin-top: -50px;
-left: 20px; 
-
-
+    left: 20px; 
 }
 
 .icons-bio {
