@@ -473,6 +473,9 @@ footer{
     justify-content: space-between;
     align-items: flex-start;
 }
+.footer-top button{
+    color: #2D292A;
+}
 .logo-footer{
     width: 130px;
     height: 60px;
