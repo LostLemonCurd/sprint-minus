@@ -11,7 +11,9 @@
     <title>Minus</title>
 </head>
 
-<body>
+<body class="bodi">
+
+ <!--HEADER-->
 
     <!-- HEADER -->
     <header id="desktop-header">
@@ -35,31 +37,32 @@
         </nav>
         <a href="choix.html" class="cta-commencer h2 radient" tabindex="0">Commencer</a>
     </header>
+ <!--FIN HEADER-->
  
 
  <!--MAIN-->
- <main class="main-mc">
-     <ul class="purchase-process">
-       <li><a href="choix.html" class="h4 line">Choisir sa box</a></li>
-       <li><a href="recette.html" class="h4 line">Vos repas</a></li>
-       <li><a href="achat.html" class="h4">Vos informations & Livraison</a></li>
+ <main>
+    <ul class="purchase">
+        <li class="active"><a href="choix.html"><img src="img/1.png" alt="numero1"><span>Choisir sa box</span></a><span class="trait"></span></li>
+        <li><a href="recette.html"><img src="img/2.png" alt="numero2"><span>Vos repas</span></a><span class="trait"></span></li>
+        <li><a href="achat.html"><img src="img/3.png" alt="numero3"><span>Informations / Livraison</span></a><span class="trait"></span></li>
     </ul>
  
      <div class="premier"> 
          <h2 class="titre">Choisir sa box</h2>
-         <p class="abnt">Abonnement flexible de delicieuses recettes et ingrédients livrés</p>
-         <p class="p2">chaque semaine</p>
+         <p class="abnt h4">Abonnement flexible de delicieuses recettes et ingrédients livrés</p>
+         <p class="p2 h4">chaque semaine</p>
 
         <div class="deuxieme">
             <div class="nbre">Nombre de box</div>
             <div class="tableau">
                 <table>
                     <tr>
-                        <td class="le">01</td>
-                        <td>02</td>
-                        <td>03</td>
-                        <td>04</td>
-                        <td>05</td>
+                        <td class="le h4">01</td>
+                        <td class="h4">02</td>
+                        <td class="h4">03</td>
+                        <td class="h4">04</td>
+                        <td class="h4">05</td>
                     </tr>
                 </table>
             </div>    
@@ -67,44 +70,47 @@
 
         <div class="troisieme">
             <div class="tet">La box</div>
-            <div class="re">05 Repas</div>    
+            <div class="re h4">05 Repas</div>    
         </div>
+        <div class="trois">
         <p class="p3">Adresse E-mail</p>
         <form method="post">
-            <input style="background-color: #E0E7EC;" class="mail" type="password" name="mdp" placeholder="Louis5894@gmail.com" required>
+            <input class="mail" type="password" name="mdp" placeholder="Louis5894@gmail.com" required>
         </form>
+        </div>
 
         <div class="quatrieme">
             <div class="semin">Prix :  01 box</div>
-            <div class="prix">39,90€</div>
-            <div class="repas">Semaine/5 repas</div>
+            <div class="prix h4">39,90€</div>
+            <div class="repas H4">Semaine/5 repas</div>
         </div>
 
         <div class="cinquieme">
-            <a class="cta-commencer h2 radient" href="recette.html">Choisir cette box</a>
+            <a href="recette.html" class="cta-commencer h2 radient" >Choisir cette box</a>
         </div> 
      </div>
  </main>
-<!--FIN MAIN-->          
+ <!--FIN MAIN-->          
 
-<!-- FOOTER -->
+
+    <!-- FOOTER -->
     <footer>
         <div class="footer-top">
-            <a href="#"><img src="img/logo-footer.svg" alt="Logo Minus Footer" class="logo-footer"></a>
+            <a href="index.html"><img src="img/logo-footer.svg" alt="Logo Minus Footer" class="logo-footer"></a>
             <div class="nav-links">
                 <nav class="nav-footer">
-                    <button href="#" class="link-title" id="nav-minus" tabindex="0">
+                    <button class="link-title" id="nav-minus" tabindex="0">
                         <span class="h2 footer-link">Minus</span>
                         <img id="chevronMinus" class="img-chevron" src="img/chevron-right.svg" alt="Chevron up">    
                     </button>                    
                     <div id="links-minus" class="nav-footer-off desktop-links">
                         <a href="#" class="txt-footer">Le Concept</a>
-                        <a href="#" class="txt-footer">Espace Minus</a>
+                        <a href="connexion.html" class="txt-footer">Espace Minus</a>
                         <a href="#" class="txt-footer">Gestion des Cookies</a>
                     </div>
                 </nav>
                 <nav class="nav-footer nav-mid">
-                    <button href="#" class="link-title" id="nav-about" tabindex="0">
+                    <button class="link-title" id="nav-about" tabindex="0">
                         <span class="h2 footer-link">À Propos</span>
                         <img id="chevronAbout" class="img-chevron" src="img/chevron-right.svg" alt="Chevron up">    
                     </button>                    
@@ -116,7 +122,7 @@
                     </div>
                 </nav>
                 <nav class="nav-footer">
-                    <button href="#" class="link-title" id="nav-aide" tabindex="0">
+                    <button class="link-title" id="nav-aide" tabindex="0">
                         <span class="h2 footer-link">Aide</span>
                         <img id="chevronAide" class="img-chevron" src="img/chevron-right.svg" alt="Chevron up">    
                     </button>                    
@@ -145,7 +151,6 @@
             <a href="#"><img src="img/arrow-up.svg" alt="arrow-up" class="arrow-up cta radient"></a>
         </div>
     </footer>
-
 
 <!--FIN FOOTER-->   
   
