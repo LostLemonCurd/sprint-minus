@@ -343,7 +343,7 @@ header .cta-commencer:hover{
 .avis-card{
     display: flex;
     flex-direction: column;
-    min-width: 300px;
+    /* min-width: 300px; */
     height: auto;
     padding: 20px;
     margin: 0 40px;
